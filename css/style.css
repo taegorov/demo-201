@@ -6,8 +6,8 @@ body {
 }
 
 h1 {
-    color:red;
-    font-size: 55px;
+    color:darkred;
+    font-size: 35px;
     margin: 15px;
 }
 
@@ -15,4 +15,22 @@ h2 {
     color:black;
     font-size: 25px;
     margin: 10px;
+}
+
+article {
+    color: rgb(58, 61, 65);
+    font-size: 16px;
+    margin: 5px;
+}
+
+#userNameTim {
+    color:red;
+    font-size: 55px;
+    margin: 15px;
+}
+
+#otherNames {
+    color:darkslateblue;
+    font-size: 55px;
+    margin: 15px;
 }
