@@ -10,8 +10,8 @@ The page also greets you if you enter your name, with a specialized greeting if 
 
 ### Links and Resources
 
-- [Coding knowledge learned from Code Fellows](https://www.codefellows.org/){:target="_blank"}
-- [Favicon created here](https://favicon.io/favicon-converter/){:target="_blank"}
+- [Coding knowledge learned from Code Fellows](https://www.codefellows.org/
+- [Favicon created here](https://favicon.io/favicon-converter/)
 - [Favicon skills learned here](https://www.digitalocean.com/community/tutorials/how-to-add-a-favicon-to-your-website-with-html)
 
 ### Reflections and Comments
