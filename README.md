@@ -16,5 +16,6 @@ The page also greets you if you enter your name, with a specialized greeting if 
 
 ### Reflections and Comments
 
-- Here are some notes
-- And some others!
+I learned how to better use conditionals via this lab. While I had a decent understanding after Code 102, this project allowed me to build the guessing game (using if/else) while rarely checking my notes! 
+
+I still hope to add a loop (or loops) to the guessing game, so you can't move on until you enter the correct answer. I think I have a good grasp on loops, but I'll wait to add them until we get to them in 201, because I have a hunch there's a more elegant way of doing it.
