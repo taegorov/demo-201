@@ -61,3 +61,4 @@ if (whichVice === 'no') {
     alert('You were supposed to enter yes or no');
 }
 // console.log('answer to "year without alcohol?" ' + whichVice);
+

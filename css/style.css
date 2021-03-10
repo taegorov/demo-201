@@ -16,13 +16,20 @@ h2 {
     color:black;
     font-size: 25px;
     margin: 10px;
+    text-align: left;
 }
 
-article {
-    color: rgb(58, 61, 65);
+h3 {
+    color:black;
+    font-size: 25px;
+    margin: 10px;
+}
+
+p {
+    color: rgb(53, 72, 97);
     font-size: 16px;
-    margin: 15px;
-    text-align: center;
+    margin: 5px;
+    text-align: left;
 }
 
 #userNameTim {
@@ -35,4 +42,25 @@ article {
     color:darkslateblue;
     font-size: 55px;
     margin: 15px;
+}
+
+footer {
+    clear: left;
+    text-align: left;
+    padding: 10px;
+    background-color:hsla(196, 100%, 50%, .9);
+    border-style: solid;
+    border-color: black;
+}
+
+#topTen {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
