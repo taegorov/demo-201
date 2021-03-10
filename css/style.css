@@ -9,6 +9,7 @@ h1 {
     color:darkred;
     font-size: 35px;
     margin: 15px;
+    text-align: center;
 }
 
 h2 {
@@ -20,7 +21,8 @@ h2 {
 article {
     color: rgb(58, 61, 65);
     font-size: 16px;
-    margin: 5px;
+    margin: 15px;
+    text-align: center;
 }
 
 #userNameTim {
