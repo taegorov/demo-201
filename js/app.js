@@ -1,3 +1,5 @@
+https://github.com/taegorov/demo-201.git
+
 'use strict'
 
 //tracking correct answers
@@ -15,6 +17,7 @@ function getUserName(){
     return userName;
 }
 
+function deadLift(){
 let deadliftAmount = prompt('Is Tim\'s heaviest deadlift 515 pounds?').toLowerCase();
 if (deadliftAmount === 'yes') {
     alert('That is correct!');
@@ -24,8 +27,12 @@ if (deadliftAmount === 'yes') {
 } else {
     alert('That\'s not yes or no, but that\'s fine');
 }
+}
 // console.log('answer to "is deadlift 515?" ' + deadliftAmount);
 
+deadLift();
+
+function motherland(){
 let whichCountry = prompt('Was Tim born in the USA?').toLowerCase();
 if (whichCountry === 'no') {
     alert('That is correct!');
@@ -35,8 +42,12 @@ if (whichCountry === 'no') {
 } else {
     alert('That\'s not yes or no, but whatever I guess');
 }
+}
+
+motherland();
 // console.log('answer to "born in USA?" ' + whichCountry);
 
+function goCougs(){
 let whichUniversity = prompt('Did Tim go to University of Washington?').toLowerCase();
 if (whichUniversity === 'no') {
     alert('That is correct!');
@@ -46,8 +57,13 @@ if (whichUniversity === 'no') {
 } else {
     alert('That\'s not yes or no, but I\'m not your boss');
 }
+}
+
+goCougs();
+
 // console.log('answer to "go to UW?" ' + whichUniversity);
 
+function heIsASalesMan(){
 let whichIndustry = prompt('Did Tim come from the sales industry?').toLowerCase();
 if (whichIndustry === 'yes') {
     alert('That is correct!');
@@ -57,8 +73,14 @@ if (whichIndustry === 'yes') {
 } else {
     alert('That\'s not yes or no, but do your thing');
 }
+}
+
+heIsASalesMan();
+
 // console.log('answer to "come from sales?" ' + whichIndustry);
 
+
+function tricksy(){
 let whichVice = prompt('Will Tim have gone 1 year without alcohol in July?').toLowerCase();
 if (whichVice === 'no') {
     alert('That is correct!');
@@ -68,10 +90,16 @@ if (whichVice === 'no') {
 } else {
     alert('You were supposed to enter yes or no');
 }
+}
+
+tricksy();
+
 // console.log('answer to "year without alcohol?" ' + whichVice);
 
 //Number guessing game
 //Random number generator provided by Roger Huba from Code 102, who referenced w3 Schools
+
+function randomGuess(){
 let correctAnswer = Math.floor(Math.random() * 10) + 1;
 let guesses = 4;
 
@@ -93,8 +121,13 @@ for (let i = 0; i < guesses; i+=1) {
     } 
 }
  alert('The answer was ' + correctAnswer);
+}
+
+randomGuess();
 
 //Array guessing game - number game with multiple right answers
+
+function arrayGuess(){
  let correctGuess = [2, 3, 4];
  console.log(correctGuess);
  correctGuess.length;
@@ -129,5 +162,9 @@ let flag = false;
        alert('The correct numbers were ' + correctGuess);
  }
  }
+}
+
+arrayGuess();
 
  alert('You answered ' + totalCorrectAnswers + ' out of 7 questions correctly!')
+
