@@ -15,6 +15,8 @@ I also added a second numbers guessing game that allows multiple correct answers
 Finally, the user is informed of how many answers they got correct out of how many total questions there are.
 
 ### Author: Tim Egorov, Seatt-c-201d73
+- Driver: Hunter
+- Navigator: Tim
 
 ### Links and Resources
 
