@@ -6,6 +6,14 @@ This web page is a basic guessing game that asks you to guess information about 
 
 The page also greets you if you enter your name, with a specialized greeting if you enter "Tim" when prompted to enter your name.
 
+#### Added 3/10/21: 
+
+I added a numbers guessing game that utilized a random number generator. The user has a limited number of guesses and alerts pop up informing them if they guessed too high or too low.
+
+I also added a second numbers guessing game that allows multiple correct answers, which are pre-defined in an array.
+
+Finally, the user is informed of how many answers they got correct out of how many total questions there are.
+
 ### Author: Tim Egorov, Seatt-c-201d73
 
 ### Links and Resources
