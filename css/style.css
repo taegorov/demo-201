@@ -7,7 +7,12 @@ body {
 
 h1 {
     color:darkred;
+    background-color: #82b3db;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 8px;
     font-size: 35px;
+    padding: 10px;
     margin: 15px;
     text-align: center;
 }
