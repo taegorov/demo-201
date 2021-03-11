@@ -1,5 +1,8 @@
 'use strict'
 
+//tracking correct answers
+let totalCorrectAnswers = 0;
+
 // function getUserName(){
 //     let userName = prompt('Please enter your name');
 //     if (userName == 'Tim'){
@@ -15,6 +18,7 @@
 // let deadliftAmount = prompt('Is Tim\'s heaviest deadlift 515 pounds?').toLowerCase();
 // if (deadliftAmount === 'yes') {
 //     alert('That is correct!');
+        totalCorrectAnswers += 1;
 // } else if (deadliftAmount === 'no') {
 //     alert('Wrong!');
 // } else {
@@ -78,6 +82,7 @@
 //     }
 // }
 
+//Number guessing game
 //Random number generator provided by Roger Huba from Code 102, who referenced w3 Schools
 let correctAnswer = Math.floor(Math.random() * 10) + 1;
 let guesses = 4;
@@ -90,8 +95,8 @@ for (let i = 0; i < guesses; i+=1) {
     if (userAnswer == correctAnswer) {
         alert('That\'s correct!');
         break;
-    } else if(i === 3 && userAnswer !== correctAnswer){
-        alert('One more guess!');
+    } else if(i === 2 && userAnswer !== correctAnswer){
+        alert('Wrong! One more guess!');
     } else if(userAnswer > correctAnswer){
         alert('Too high, guess again');
     } else if(userAnswer < correctAnswer){
@@ -100,24 +105,36 @@ for (let i = 0; i < guesses; i+=1) {
 }
  alert('The answer was ' + correctAnswer);
 
+//Array guessing game - number game with multiple right answers
+ let correctGuess = [2, 3, 4];
+ console.log(correctGuess);
+ correctGuess.length;
 
-let correctAnswerMulti = [2, 3, 4];
-let guesses = 7;
+ let guessesTwo = 6;
 
-for (let i = 0; i < guesses; i+=1) {
-    let userAnswerMulti = prompt('Please Enter a Number from 1 to 10');
-    while (userAnswer < 0 || userAnswer > 10) {
-        userAnswer = prompt('I said between 1 to 10, not something ridiculous');
+ for(let i = 0; i < guessesTwo; i+=1) {
+    if(i === 5) {
+        alert('Last try!');
     }
-    if (userAnswer == correctAnswerMulti) {
-        alert('That\'s correct!');
-        break;
-    } else if(i === 4 && userAnswer !== correctAnswerMulti){
-        alert('One more guess!');
-    } else if(userAnswer > correctAnswerMulti){
-        alert('Too high, guess again');
-    } else if(userAnswer < correctAnswerMulti){
-        alert('Too low, guess again');
-    } 
-}
- alert('The answer was ' + correctAnswerMulti);
+    let userGuess = parseInt (prompt('Time to guess again, multiple right answers this time between 1-10!'));
+    console.log(typeof userGuess);
+    while(userGuess < 1 || userGuess > 10) {
+        userGuess = prompt ('Guess between 1 and 10!');
+    }
+let flag = false;
+    for(let k = 0; k < correctGuess.length; k+=1) {
+        console.log(correctGuess[k], k);
+        if(userGuess === correctGuess[k]) {
+            alert('You are correct!!!');
+            i = 7;
+            break;
+        } else if(userGuess !== correctGuess[k] && k === correctGuess.length - 1 ){
+            alert('Incorrect!');
+            
+        }
+    }
+       
+    if(i === 5 && flag === false){
+       alert('The correct numbers were ' + correctGuess);
+ }
+ }
