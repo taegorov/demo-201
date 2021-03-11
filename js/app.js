@@ -105,17 +105,18 @@ for (let i = 0; i < guesses; i+=1) {
     if(i === 5) {
         alert('Last try!');
     }
-    let userGuess = parseInt (prompt('Time to guess again, multiple right answers this time between 1-10!'));
+    let userGuess = parseInt (prompt('Guess between 1-10 again, this time there\'s more than one right answer'));
     console.log(typeof userGuess);
     while(userGuess < 1 || userGuess > 10) {
-        userGuess = prompt ('Guess between 1 and 10!');
+        userGuess = parseInt (prompt ('Guess between 1 and 10!'));
     }
 let flag = false;
     for(let k = 0; k < correctGuess.length; k+=1) {
         console.log(correctGuess[k], k);
         if(userGuess === correctGuess[k]) {
-            alert('You are correct!!!');
+            alert('You are correct!');
             totalCorrectAnswers += 1;
+            // the below breaks you out of the above for loop, since i = 7, and i won't meet the conditions necessary to run the first loop. effectively breaking you out of all loops
             i = 7;
             break;
         } else if(userGuess !== correctGuess[k] && k === correctGuess.length - 1 ){
