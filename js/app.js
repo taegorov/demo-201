@@ -2,7 +2,7 @@ https://github.com/taegorov/demo-201.git
 
 'use strict'
 
-//tracking correct answers
+
 let totalCorrectAnswers = 0;
 
 function getUserName(){
@@ -28,7 +28,7 @@ if (deadliftAmount === 'yes') {
     alert('That\'s not yes or no, but that\'s fine');
 }
 }
-// console.log('answer to "is deadlift 515?" ' + deadliftAmount);
+
 
 deadLift();
 
@@ -45,7 +45,7 @@ if (whichCountry === 'no') {
 }
 
 motherland();
-// console.log('answer to "born in USA?" ' + whichCountry);
+
 
 function goCougs(){
 let whichUniversity = prompt('Did Tim go to University of Washington?').toLowerCase();
@@ -61,8 +61,6 @@ if (whichUniversity === 'no') {
 
 goCougs();
 
-// console.log('answer to "go to UW?" ' + whichUniversity);
-
 function heIsASalesMan(){
 let whichIndustry = prompt('Did Tim come from the sales industry?').toLowerCase();
 if (whichIndustry === 'yes') {
@@ -76,9 +74,6 @@ if (whichIndustry === 'yes') {
 }
 
 heIsASalesMan();
-
-// console.log('answer to "come from sales?" ' + whichIndustry);
-
 
 function tricksy(){
 let whichVice = prompt('Will Tim have gone 1 year without alcohol in July?').toLowerCase();
@@ -94,9 +89,6 @@ if (whichVice === 'no') {
 
 tricksy();
 
-// console.log('answer to "year without alcohol?" ' + whichVice);
-
-//Number guessing game
 //Random number generator provided by Roger Huba from Code 102, who referenced w3 Schools
 
 function randomGuess(){
@@ -125,8 +117,6 @@ for (let i = 0; i < guesses; i+=1) {
 
 randomGuess();
 
-//Array guessing game - number game with multiple right answers
-
 function arrayGuess(){
  let correctGuess = [2, 3, 4];
  console.log(correctGuess);
@@ -149,7 +139,6 @@ let flag = false;
         if(userGuess === correctGuess[k]) {
             alert('You are correct!');
             totalCorrectAnswers += 1;
-            // the below breaks you out of the above for loop, since i = 7, and i won't meet the conditions necessary to run the first loop. effectively breaking you out of all loops
             i = 7;
             break;
         } else if(userGuess !== correctGuess[k] && k === correctGuess.length - 1 ){
