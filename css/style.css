@@ -1,16 +1,17 @@
 body {
-    background-color: #b2dbac;
+    background-color: rgb(241, 241, 173);
     margin: 0;
     height: 100%;
     font-family: tahoma;
 }
 
 h1 {
-    color:darkred;
-    background-color: #82b3db;
-    border-width: 4px;
+    color:white;
+    background-image: url(../img/rP71Q5Q.png);
+    border-width: 2px;
     border-style: solid;
-    border-radius: 8px;
+    border-radius: 10px;
+    border-color: white;
     font-size: 35px;
     padding: 10px;
     margin: 15px;
@@ -28,6 +29,14 @@ h3 {
     color:black;
     font-size: 25px;
     margin: 10px;
+}
+
+#vidya {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin: 30px;
+    padding: 10px;
 }
 
 p {
@@ -51,21 +60,34 @@ p {
 
 footer {
     clear: left;
+    margin: 60px;
     text-align: left;
     padding: 10px;
-    background-color:hsla(196, 100%, 50%, .9);
+    background-image: url(../img/rP71Q5Q.png);
     border-style: solid;
-    border-color: black;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 10px;
 }
 
 #topTen {
+    text-align: center;
+    margin: 20px;
     list-style-type: decimal;
     list-style-position: inside;
+    color: white;
+    font-size: 16px;
 }
 
 ul {
     list-style-type: circle;
     list-style-position: inside;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 10px;
+    border-style: solid;
+}
+
+#imagecredit {
+    text-align: right;
+    font-size: 8px;
 }
